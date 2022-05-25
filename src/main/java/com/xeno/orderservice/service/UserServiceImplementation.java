@@ -25,10 +25,28 @@ public class UserServiceImplementation implements UserService {
     public UserEntity findUserById(Long userID) {
         return userRepository.findById(userID).orElseThrow(()->new NullPointerException("NOT_FOUND"));
     }
-
     @Override
     public List<OrderEntity> findOrderDetails(Long userID) {
         return orderRepository.findAllByUserEntity(userRepository.findById(userID).get());
     }
+    @Override
+    public UserEntity deleteUser(Long userID) {
+        UserEntity deletedUser = findUserById(userID);
+        orderRepository.deleteById(userID);
+        return deletedUser;
+    }
 
+    @Override
+    public UserEntity updateUserDetails(UserEntity userEntity) {
+        UserEntity user = findUserById(userEntity.getUserID());
+
+        if(user.getName()!=null || !user.getName().equals(userEntity.getName()))
+            user.setName(userEntity.getName());
+        else if(user.getEmail()!=null || !user.getEmail().equals(userEntity.getEmail()))
+            user.setName(userEntity.getName());
+        else if(user.getAddress()!=null || !user.getAddress().equals(userEntity.getAddress()))
+            user.setName(userEntity.getName());
+
+        return userRepository.save(user);
+    }
 }

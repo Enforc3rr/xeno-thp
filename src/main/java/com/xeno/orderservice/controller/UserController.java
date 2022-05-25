@@ -46,7 +46,28 @@ public class UserController {
             return new ResponseEntity<>(response,HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
-
+    @PutMapping("/updateUserDetails")
+    public ResponseEntity<?> updateDetails(@RequestBody UserEntity userEntity){
+        try {
+            return new ResponseEntity<>(userService.updateUserDetails(userEntity),HttpStatus.ACCEPTED);
+        }catch (Exception e){
+            HashMap<String,String> response = new HashMap<>();
+            response.put("message","An Error Occurred while updating user into the database");
+            response.put("error",String.valueOf(e));
+            return new ResponseEntity<>(response,HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+    @DeleteMapping("/deleteUser/{userID}")
+    public ResponseEntity<?> deleteUser(@PathVariable("userID") Long userID){
+        try {
+            return new ResponseEntity<>(userService.deleteUser(userID),HttpStatus.OK);
+        }catch (Exception e){
+            HashMap<String,String> response = new HashMap<>();
+            response.put("message","An Error Occurred while deleting user from the database");
+            response.put("error",String.valueOf(e));
+            return new ResponseEntity<>(response,HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
     @GetMapping(value = "/orderDetails/{userID}")
     public ResponseEntity<?> orderDetails(@PathVariable("userID") Long userID){
         try{

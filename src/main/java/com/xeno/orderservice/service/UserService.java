@@ -11,6 +11,7 @@ import java.util.List;
 public interface UserService {
     UserEntity userSignup(UserEntity userEntity);
     UserEntity findUserById(Long userID);
-
     List<OrderEntity> findOrderDetails(Long userID);
+    UserEntity deleteUser(Long userID);
+    UserEntity updateUserDetails(UserEntity userEntity);
 }
