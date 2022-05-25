@@ -60,3 +60,11 @@
     ```
     - /:orderID : Returns order details.[GET]
 
+#### Working : 
+
+
+
+#### Note : 
+I was not able to find any cloud hosting service which allowed me to host my docker container for free And services like AWS or GCP requires us to use non-RUPAY Debit cards which I currently don't have.
+
+
