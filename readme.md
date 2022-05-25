@@ -1,5 +1,7 @@
 # Order-Service (Xeno Take Home Project)
 
+Project can be accessed from : `https://mysterious-gorge-62682.herokuapp.com/`
+
 - This Application is just a simple Order placing application with Three main Entities :
   - User Entity 
     ```
