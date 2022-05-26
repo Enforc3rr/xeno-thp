@@ -10,6 +10,8 @@ I was not able to find any cloud hosting service which allowed me to host my doc
 So , instead I have uploaded docker image of the project which can be pulled and tested out on local machine.
 
 
+### About :
+- Based On Spring Boot ( Java ) 
 - This Application is just a simple Order placing application with Three main Entities :
   - User Entity 
     ```
