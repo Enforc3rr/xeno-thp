@@ -1,6 +1,13 @@
 # Order-Service (Xeno Take Home Project)
 
-Project can be accessed from : `https://mysterious-gorge-62682.herokuapp.com/`
+Application can be accessed from : `https://mysterious-gorge-62682.herokuapp.com/`
+Docker Image Of Application Can be Pulled From : `https://hub.docker.com/layers/enforc3rr/dockerhub/orderservice/images/sha256:19dbb8af73370e40b8b87b9c5c5596df6dfde842562120e833d05617064e6cb5`
+
+
+#### Note : 
+I was not able to find any cloud hosting service which allowed me to host my docker container for free And services like AWS or GCP requires us to use non-RUPAY Debit cards which I currently don't have.
+So , instead I have uploaded docker image of the project which can be pulled and tested out on local machine.
+
 
 - This Application is just a simple Order placing application with Three main Entities :
   - User Entity 
@@ -65,9 +72,6 @@ Project can be accessed from : `https://mysterious-gorge-62682.herokuapp.com/`
 #### Working : 
 ![working](Working.gif)
 
-
-#### Note : 
-I was not able to find any cloud hosting service which allowed me to host my docker container for free And services like AWS or GCP requires us to use non-RUPAY Debit cards which I currently don't have.
 
 
 
