@@ -1,7 +1,8 @@
 # Order-Service (Xeno Take Home Project)
 
-Application can be accessed from : `https://mysterious-gorge-62682.herokuapp.com/`
-Docker Image Of Application Can be Pulled From : `https://hub.docker.com/layers/enforc3rr/dockerhub/orderservice/images/sha256:19dbb8af73370e40b8b87b9c5c5596df6dfde842562120e833d05617064e6cb5`
+- Application can be accessed from : `https://mysterious-gorge-62682.herokuapp.com/`   
+
+- Docker Image Of Application Can be Pulled From : `https://hub.docker.com/layers/enforc3rr/dockerhub/orderservice/images/sha256:19dbb8af73370e40b8b87b9c5c5596df6dfde842562120e833d05617064e6cb5`
 
 
 #### Note : 
